@@ -1,0 +1,29 @@
+version: '2'
+
+services:
+  server1:
+    build: server/
+
+  server2:
+    build: server/
+
+  server3:
+    build: server/
+
+  server4:
+    build: server/
+
+  lb:
+    build: lb/
+    ports: 
+      - "8000:8000"
+      - "8001:8001"
+
+  prometheus:
+    build: prometheus/
+    ports:
+      - "9090:9090"
+
+  # load:
+  #  build: load/    
+    
