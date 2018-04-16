@@ -32,6 +32,9 @@ scrape_configs:
     static_configs:
       - targets: ['server1:9100', 'server2:9100', 'server3:9100', 'server4:9100']
 
+  - job_name: 'haproxy'
+    static_configs:
+      - targets: ['lb-exporter:9101']
         
 alerting:
   alertmanagers:

@@ -17,7 +17,10 @@ services:
     build: lb/
     ports: 
       - "8000:8000"
-      - "8001:8001"
+
+  lb-exporter:
+    image: quay.io/prometheus/haproxy-exporter
+    command: --haproxy.scrape-uri="http://admin:admin@lb:8001/haproxy?stats;csv"
 
   prometheus:
     build: prometheus/
