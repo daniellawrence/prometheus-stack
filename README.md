@@ -17,4 +17,4 @@ What you get.
 
 1000 words about how it works.
 ---------
-!( prometheus-stack/images/prometheus-stack.png )[ prometheus-stack/images/prometheus-stack.png ]
+![https://raw.githubusercontent.com/daniellawrence/prometheus-stack/master/images/prometheus-stack.png](https://raw.githubusercontent.com/daniellawrence/prometheus-stack/master/images/prometheus-stack.png)
