@@ -1,3 +1,6 @@
+import random
+import time
+
 from flask import Flask, request
 from prometheus_flask_exporter import PrometheusMetrics
 
@@ -7,6 +10,7 @@ metrics = PrometheusMetrics(app)  # noqa
 
 @app.route('/')
 def index():
+    time.sleep(random.random())
     return 'ok'
 
 
